@@ -1,0 +1,109 @@
+/*fotokaleria*/
+@media only screen and (max-width: 1150px){
+    .photos{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .col.span-1-of-3{
+        width: 48.5%;
+        margin-left: 10px;
+    }
+    .one-reference:nth-child(3){
+        display: none;
+    }
+
+    /***** About Us*****/
+    .pizza-example img{
+        margin: 0 2% 0 2%;
+    }
+
+    .pizza-example .span-1-of-2{
+        width: 48%;
+    }
+      
+}
+
+
+@media only screen and (max-width: 860px){
+   /*our-pizza*/
+   .pizza-info .span-1-of-2{
+       width: 96%;
+   }
+   .pizza-info img{
+       margin-left:2%;
+       margin-right:2%;
+   }
+}
+@media only screen and (max-width: 765px){
+    /*our-pizza*/
+    
+    .text-pizza p{
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+     .photos .col{
+        margin-left:0;  
+      }
+      .photos li{
+       width:100%;
+       
+    }    
+    .text-pizza p{
+        padding-top: 12px;
+    }
+   
+    /***** About Us*****/
+    .pizza-example .span-1-of-2{
+    width: 96%;
+       
+    }
+    .pizza-example .col{
+       margin-left: 0px;
+    }
+    
+    .pizza-example img{
+        margin: 0 2% 0 2%;
+    }
+}
+
+@media only screen and (max-width:730px){
+    /**header**/
+
+    .header-text{
+        width:100%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    .header-text h1{
+     text-align: center;
+        
+        
+    }
+}
+
+
+
+
+/*referencie*/
+@media only screen and (max-width: 685px){
+    .col.span-1-of-3.one-reference{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .photo-name{
+        float: right;
+        margin-right: 30px;
+    }
+
+}
+
+
+
+
+

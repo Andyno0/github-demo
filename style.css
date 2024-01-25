@@ -1,0 +1,296 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+/******reusable*****/
+.row{
+    max-width: 1140px;
+    margin: 0 auto
+}
+
+
+/**********header *******/
+header{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.2)), url("./obrazky/pizza-gae925cba0_1920.jpg");
+    height: 100vh;
+    /* vh-viewport height*/
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#logo img{
+    width: 200px;
+    position: absolute;
+    top: 2%;
+}
+
+nav ul{
+    float: right;
+    margin-top: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    
+    }
+
+nav ul li a:link,
+nav ul li a:visited{
+        color: white;
+        font-size:30px;
+        text-decoration: none;
+        margin-left: 15px;
+        }
+nav ul li a:hover,
+nav ul li a:active{
+border-bottom: 2px solid tomato;
+}        
+        
+
+.header-text h1{
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}     
+.tlacidlo{
+    text-decoration: none;
+    color:white;
+    font-size: 22px;
+    border-bottom: 1px solid tomato;
+    border-radius: 10px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    display:inline-block ;
+    
+}
+.tlacidlo_plne:link,
+.tlacidlo_plne:visited{
+    background:rgba(250, 129, 108, 0.616);
+}
+/*visited- používa sa na zmenenie farby po navštívení odkazu*/
+
+.tlacidlo_plne:hover,
+.tlacidlo-plne:active{
+    /*transition: background 1.5s;*/
+    background: rgb(248, 42, 5);
+}
+
+.tlacidlo_prazdne:link,
+.tlacidlo-prazdne:visited{
+
+    margin-left: 10px;
+}
+
+.tlacidlo_prazdne:hover,
+.tlacidlo-prazdne:active{
+
+    /*transition: background 1,5sec;*/
+    background: rgb(248, 93, 65);
+    
+}
+/*visited- používa sa na zmenenie farby po navštívení odkazu*/
+
+/***** About Us*****/
+.heading-main h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+
+
+}
+.heading-main h2::after{
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 2px solid rgb(248, 93, 65);
+    margin: 20px auto;
+
+}
+
+/***** About Us*****/
+.pizza-example img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px rgb(48, 47, 47) ;
+}
+
+/***** Our-pizza*****/
+.pizza-info img{
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px rgb(48, 47, 47) ;
+}
+.text-pizza{
+    margin-bottom:20px; 
+}
+
+
+.text-pizza div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    margin: 0;
+    float: left;
+}
+.text-pizza p{
+    margin-left: 60px;
+    font-size: 20px;
+}
+/**** referencie ****/
+.referencie{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)), url(/obrazky/pizza1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    ;
+}
+.referencie h2{
+    color: white;
+    padding-top: 40px;
+    
+}
+.referencie h2::after{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.customer-reference img{
+    width: 100px;   
+    border-radius: 50%;
+    float: left;
+}
+.customer-reference p{
+    color: white;
+    font-style: italic;
+}
+
+.photo-name{
+    margin-bottom: 70px;
+}
+
+.photo-name p{
+    padding-top: 18px;
+    margin-top: 15px;
+    padding-left: 120px;
+
+}
+
+
+/*** photo gallery ****/
+.photos img{
+   width: 100%;
+    height: 300px;
+    transform: scale(1.15);
+    opacity: 0.3;
+           
+}
+.photos li{
+    
+    overflow: hidden;
+    height: 300px;
+}
+
+.photos img:hover{
+    transition: transform 1.5s, opacity 0.5s;
+    opacity: 1;
+    transform: scale(1);
+    
+}
+
+
+.photos li{
+    background-color: rgb(44, 44, 44);
+   ;
+}
+
+/**** contact formular***/
+
+.contact-form{
+max-width: 700px;
+text-align: center;
+   
+}
+
+.contact-form input{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 11px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"]{
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+        margin-bottom: 20px;
+}
+
+
+input[type="submit"]:hover{
+    background-color: rgb(253, 160, 144);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 1s;
+
+}
+
+.contact-form textarea{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***** footer ***/
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    background: rgb(247, 83, 54);
+}
+
+footer p{
+   display: inline;
+   ;
+}
+
+footer p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 19px;
+}
+
+/****stop floating***/
+.clearfix {zoom: 1}
+.clearfix::after{
+    content:".";
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
